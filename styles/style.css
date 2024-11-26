@@ -12,7 +12,7 @@
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
 }
 
-@media (width <= 768px){
+@media (width <= 768px) {
   .page {
     max-width: none;
   }
@@ -31,7 +31,7 @@
   padding: 20px 20px 0 0;
 }
 
-@media (width <= 375px){
+@media (width <= 375px) {
   .header {
     padding: 10px;
   }
@@ -63,7 +63,7 @@
   inset-block-end: 20px;
 }
 
-@media (width <= 375px){
+@media (width <= 375px) {
   .decorated-zone::before {
     inset-inline-end: 10px;
   inset-block-start: 10px;
@@ -79,7 +79,7 @@
   padding-left: 20px;
 }
 
-@media(width <= 375px){
+@media(width <= 375px) {
   .header__theme-menu {
     padding-left: 0;
   }
@@ -98,7 +98,7 @@
   
 }
 
-@media(width <= 768px){
+@media(width <= 768px) {
   .header__theme-menu-list {
     flex-direction: column;
     align-items: flex-end;
@@ -106,7 +106,7 @@
   }
 }
 
-@media(width <= 375px){
+@media(width <= 375px) {
   .header__theme-menu-list {
     padding-top: 65px;
   }
@@ -155,7 +155,7 @@
   margin-right: 29px;
 }
 
-@media(width <= 375px){
+@media(width <= 375px) {
   .rec-text {
     margin-right: 19px;
   }
@@ -184,7 +184,7 @@
   /*margin: 273px 0 114px 0;*/
 }
 
-@media(width <= 768px){
+@media(width <= 768px) {
   .title {
    /* margin: 173px 0 162px 0;*/
     font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
@@ -218,14 +218,14 @@
   margin-left: 20px;
 }
 
-@media(width <= 768px){
+@media(width <= 768px) {
   .subtitle-head {
     max-width: 364px;
     margin-bottom: 138px;
   }
 }
 
-@media(width <= 375px){
+@media(width <= 375px) {
   .subtitle-head {
     margin-bottom: 31px;
     margin-left: 0;
@@ -236,7 +236,7 @@
   padding: 60px 20px;
 }
 
-@media(width <= 375px){
+@media(width <= 375px) {
   .main_set {
     padding-top: 40px 10px;
   }
@@ -246,7 +246,7 @@
   padding-bottom: 80px;
 }
 
-@media(width <= 375px){
+@media(width <= 375px) {
   .section {
     padding-bottom: 50px;
   }
@@ -259,7 +259,7 @@
   justify-content: space-between;
 }
 
-@media(width <= 375px){
+@media(width <= 375px) {
   .section_why, .section_advices {
     flex-direction: column;
   }
@@ -275,13 +275,13 @@
   width:calc((100% - 60px)/3);
 }
 
-@media(width <= 768px){
+@media(width <= 768px) {
   .section_title {
     width:calc((100% - 20px)/3);
   }
 }
 
-@media(width <= 375px){
+@media(width <= 375px) {
   .section_title {
     width:100%;
   }
@@ -297,13 +297,13 @@
   max-width: calc((100% - 10px)/3*2);
 }
 
-@media(width<=768px){
+@media(width<=768px) {
   .section_why-text, .section_advices-text {
     max-width: 472px;
   }
 }
 
-@media(width<=375px){
+@media(width<=375px) {
   .section_why-text, .section_advices-text {
     width: 100%;
   }
@@ -314,7 +314,7 @@
   background-color: var(--accent-color);
 }
 
-.text{
+.text {
   margin-block-start: 10px;
   color: var(--text-color);
   font-family: var(--font-family), monospace;
@@ -349,7 +349,7 @@
     width: calc((100% - 40px) /3);
 }
 
-@media(width<=1024px){
+@media(width<=1024px) {
   .section_causes-text {
     flex-direction: column;
   }
@@ -367,7 +367,7 @@
   padding-bottom: 60px;
 }
 
-@media(width<=375px){
+@media(width<=375px) {
   .section_gallery {
     padding-bottom: 40px;
   }
@@ -380,7 +380,7 @@
   grid-gap: 20px;
 }
 
-@media(width <= 768px){
+@media(width <= 768px) {
   .images-card {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 192px 230px 318px;
@@ -388,7 +388,7 @@
   }
 }
 
-@media(width <= 375px){
+@media(width <= 375px) {
   .images-cards {
     margin-block-start: 10px;
     display: flex;
@@ -403,7 +403,7 @@
   object-fit: cover;
 }
 
-@media(width <= 375px){
+@media(width <= 375px) {
   .img-transform {
     max-height: 355px;
   }
@@ -434,7 +434,7 @@
   grid-column: 2/4;
 }
 
-@media(width <= 375px){
+@media(width <= 375px) {
   .img1, .img2, .img3, .img4, .img5 {
     max-height: 355px;
   }
@@ -457,7 +457,7 @@
   line-height: 82.5%;
 }
 
-@media(width <= 768px){
+@media(width <= 768px) {
   .footer-header {
     /*padding: 443px 0 417px;*/
     font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);

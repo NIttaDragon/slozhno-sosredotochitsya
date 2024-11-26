@@ -2,7 +2,7 @@
   Переменные для вашего проекта
   и их переопределение под различные устройства
 */
-:root{
+:root {
   --accent-color: #ff0070;
   --menu-color: #ff0070;
   --text-color: #F1B2CE;
@@ -12,11 +12,6 @@
   --visability-rec: visible;
   --cover-image: url('/images/cover-image-dark.png');
   --menu-hover-color: rgba(255, 0, 112, 0.4);
-}
-
-
-
-:root{
   --text-font-size: 18px;
   --font-family: "IBM Plex Mono";
 }
