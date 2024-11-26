@@ -8,7 +8,7 @@
   background-position: center;
   background-size: cover; 
   background-attachment: fixed;
-  padding: 20px 20px 20px 0;
+  /*padding: 20px 20px 20px 0;*/
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
 }
 
@@ -18,11 +18,6 @@
   }
 }
 
-@media (width <= 375px){
-  .page {
-    padding: 10px;
-  }
-}
 
 .header, .footer{
   display: flex;
@@ -32,10 +27,23 @@
   min-block-size: 668px;
 }
 
+.header{
+  padding: 20px 20px 0 0;
+}
+
+@media (width <= 375px){
+  .header {
+    padding: 10px;
+  }
+}
+
+.decorated-zone{
+  position: relative;
+}
+
 .decorated-zone::before {
   content: '';
   position: absolute;
-  right: 0;
   inline-size: 25px;
   block-size: 25px;
   border-inline-end: 1px solid var(--accent-color);
@@ -53,6 +61,18 @@
   border-block-end: 1px solid var(--accent-color);
   inset-inline-start: 20px;
   inset-block-end: 20px;
+}
+
+@media (width <= 375px){
+  .decorated-zone::before {
+    inset-inline-end: 10px;
+  inset-block-start: 10px;
+  }
+
+  .decorated-zone::after {
+    inset-inline-start: 10px;
+    inset-block-end: 10px;
+  }
 }
 
 .header__theme-menu{
@@ -132,7 +152,13 @@
   font-style: normal;
   font-weight: 400;
   line-height: 25px; 
-  margin-right: 28px;
+  margin-right: 29px;
+}
+
+@media(width <= 375px){
+  .rec-text{
+    margin-right: 19px;
+  }
 }
 
 .rec-text::after{
@@ -144,6 +170,7 @@
   box-shadow: 0 0 9px 4px var(--accent-color);
   margin-left: 10px;
   display: inline-block;
+  inset-block-start: 0;
 }
 
 .title{
@@ -206,14 +233,12 @@
 }
 
 .main_set{
-  padding-top: 60px;
-  padding-left: 20px;
+  padding: 60px 20px;
 }
 
 @media(width <= 375px){
   .main_set{
-    padding-top: 40px;
-    padding-left: 0;
+    padding-top: 40px 10px; 
   }
 }
 
@@ -416,19 +441,13 @@
 }
 
 .footer{
-  padding: 20px 0 0 20px;
-}
-
-@media(width<=375px){
-  .footer{
-    padding: 0;
-  }
+  justify-content: center;
 }
 
 .footer-header{
   text-align: center;
   vertical-align: middle;
-  padding: 299px 0 274px;
+  /*padding: 299px 0 274px;*/
   color: var(--second-accent-color);
   text-shadow: 2px 2px 0px var(--accent-color);
   font-family: var(--font-family), monospace;
@@ -440,41 +459,18 @@
 
 @media(width <= 768px){
   .footer-header{
-    padding: 443px 0 417px;
+    /*padding: 443px 0 417px;*/
     font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   }
 }
 
-@media(width <= 375px){
+/*@media(width <= 375px){
   .footer-header{
     padding: 276px 0 250px;
-  }
-}
+  }*
+}*/
 
 .footer-mod{
   margin-bottom: 0;
   margin-left: 0;
-}
-
-.decorated-zone-2::before {
-  content: '';
-  position: absolute;
-  right: 0;
-  inline-size: 25px;
-  block-size: 25px;
-  border-inline-end: 1px solid var(--accent-color);
-  border-block-start: 1px solid var(--accent-color);
-  inset-inline-end: 20px;
-  inset-block-start: 4580px;
-}
-
-.decorated-zone-2::after {
-  content: '';
-  position: absolute;
-  inline-size: 25px;
-  block-size: 25px;
-  border-inline-start: 1px solid var(--accent-color);
-  border-block-end: 1px solid var(--accent-color);
-  inset-inline-start: 20px;
-  inset-block-end: 20px;
 }
