@@ -21,7 +21,7 @@
 }
 
 @media (prefers-color-scheme: light) {
-  :root{
+  :root {
     --accent-color: #FF8DCB;
     --menu-color: #353430;
     --text-dark-color: #353430;
