@@ -6,9 +6,8 @@
   background-color: var(--bg-color);
   background-image: var(--cover-image);
   background-position: center;
-  background-size: cover; 
+  background-size: cover;
   background-attachment: fixed;
-  /*padding: 20px 20px 20px 0;*/
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
 }
 
@@ -17,7 +16,6 @@
     max-width: none;
   }
 }
-
 
 .header, .footer {
   display: flex;
@@ -151,7 +149,7 @@
   font-size: var(--text-font-size);
   font-style: normal;
   font-weight: 400;
-  line-height: 25px; 
+  line-height: 25px;
   margin-right: 29px;
 }
 
@@ -181,21 +179,13 @@
   font-style: normal;
   font-weight: 700;
   line-height: 82.5%; 
-  /*margin: 273px 0 114px 0;*/
 }
 
 @media(width <= 768px) {
   .title {
-   /* margin: 173px 0 162px 0;*/
     font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   }
 }
-
-/*@media(width <= 375px){
-  .title {
-    margin: 65px 0 55px 0;
-  }
-}*/
 
 .container {
   display: flex;
@@ -215,20 +205,17 @@
   max-width: 491px;
   position: relative;
   margin-bottom: 89px;
-  margin-left: 20px;
 }
 
 @media(width <= 768px) {
   .subtitle-head {
     max-width: 364px;
-    margin-bottom: 138px;
   }
 }
 
 @media(width <= 375px) {
   .subtitle-head {
     margin-bottom: 31px;
-    margin-left: 0;
   }
 }
 
@@ -238,7 +225,7 @@
 
 @media(width <= 375px) {
   .main_set {
-    padding-top: 40px 10px;
+    padding: 40px 10px;
   }
 }
 
@@ -363,16 +350,6 @@
   font-weight: 400;
 }
 
-.section_gallery {
-  padding-bottom: 60px;
-}
-
-@media(width<=375px) {
-  .section_gallery {
-    padding-bottom: 40px;
-  }
-}
-
 .images-cards {
   margin-block-start: 20px;
   display: grid;
@@ -447,7 +424,6 @@
 .footer-header {
   text-align: center;
   vertical-align: middle;
-  /*padding: 299px 0 274px;*/
   color: var(--second-accent-color);
   text-shadow: 2px 2px 0px var(--accent-color);
   font-family: var(--font-family), monospace;
@@ -459,16 +435,9 @@
 
 @media(width <= 768px) {
   .footer-header {
-    /*padding: 443px 0 417px;*/
     font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   }
 }
-
-/*@media(width <= 375px){
-  .footer-header{
-    padding: 276px 0 250px;
-  }*
-}*/
 
 .footer-mod {
   margin-bottom: 0;
