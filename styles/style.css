@@ -34,7 +34,7 @@
 
 @media (width <= 375px) {
   .header {
-    display: flex; 
+    display: flex;
     flex-direction: column;
     padding: 10px;
   }
