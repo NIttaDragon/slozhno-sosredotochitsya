@@ -26,17 +26,16 @@
   grid-template-rows: 1fr 130px 1fr;
 }
 
-@media (width <= 768px) {
+@media (width <= 1023px) {
   .header {
     grid-template-rows: 1fr 99px 1fr;
   }
 }
 
-@media (width <= 375px) {
+@media (width <= 587px) {
   .header {
-    display: flex;
-    flex-direction: column;
     padding: 10px;
+    grid-template-rows: 1fr 192px 1fr;
   }
 }
 
@@ -191,15 +190,6 @@
 @media(width <= 768px) {
   .title {
     font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-    margin-top: 0;
-    margin-bottom: 0;
-  }
-}
-
-@media(width<=375px) {
-  .title {
-    margin-top: 65px;
-    margin-bottom: 55px;
   }
 }
 
@@ -207,6 +197,12 @@
   grid-column: 2/3;
   justify-self: end;
   align-self: center;
+}
+
+@media (width <= 587px) {
+  .container {
+    grid-column: 1/3;
+  }
 }
 
 .subtitle {
@@ -226,12 +222,6 @@
 @media(width <= 768px) {
   .subtitle-head {
     max-width: 364px;
-  }
-}
-
-@media(width <= 375px) {
-  .subtitle-head {
-    margin-bottom: 31px;
   }
 }
 
@@ -259,12 +249,17 @@
   display: flex;
   flex-direction: row;
   gap: 20px;
-  justify-content: space-between;
 }
 
-@media(width <= 375px) {
+@media(width <= 767px) {
   .section_why, .section_advices {
     flex-direction: column;
+  }
+}
+
+@media (width <= 767px) {
+  .paragraf_why, .paragraf_why {
+    width: 100%;
   }
 }
 
@@ -278,13 +273,13 @@
   width:calc((100% - 60px)/3);
 }
 
-@media(width <= 768px) {
+@media(width <= 1023px) {
   .section_title {
     width:calc((100% - 20px)/3);
   }
 }
 
-@media(width <= 375px) {
+@media(width <= 767px) {
   .section_title {
     width:100%;
   }
@@ -297,17 +292,12 @@
 
 .section_why-text, .section_advices-text {
   flex-direction: column;
-  max-width: calc((100% - 10px)/3*2);
+  max-width: calc((100% - 15px)/3*2);
 }
 
-@media(width<=768px) {
+@media(width <= 767px) {
   .section_why-text, .section_advices-text {
-    max-width: 472px;
-  }
-}
-
-@media(width<=375px) {
-  .section_why-text, .section_advices-text {
+    max-width: none;
     width: 100%;
   }
 }
@@ -374,14 +364,7 @@
   font-size: 0;
 }
 
-@media(width <= 768px) {
-  .images-card {
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 20px;
-  }
-}
-
-@media(width <= 375px) {
+@media(width <= 767px) {
   .images-cards {
     margin-block-start: 10px;
     display: flex;
