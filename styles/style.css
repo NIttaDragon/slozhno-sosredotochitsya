@@ -325,7 +325,7 @@
   flex-wrap: wrap;
 }
 
-.paragraf_causes {
+.paragraf_causes { /*я не добавляю общий класс, т.к стили мне нужны только для causes, остальным параграфам ничего не нужно*/
     width: calc((100% - 40px) /3);
 }
 
